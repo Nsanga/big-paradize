@@ -3,7 +3,7 @@ const fakeData = [
     { id: 2, nom: 'Ice ananas', prix: 1500, type: 'drink', category: 'alcoolique' },
     { id: 3, nom: 'Petite Guinness', prix: 1500, type: 'drink', category: 'alcoolique' },
     { id: 4, nom: 'malta', prix: 1500, type: 'drink', category: 'alcoolique' },
-    { id: 5, nom: 'Heineken', prix: 2000, type: 'drink', category: 'alcoolique' },
+    { id: 5, nom: 'Heineken', prix: 1500, type: 'drink', category: 'alcoolique' },
     { id: 6, nom: 'Booster Cola', prix: 1500, type: 'drink', category: 'alcoolique' },
     { id: 7, nom: 'Beaufort', prix: 1500, type: 'drink', category: 'alcoolique' },
     { id: 8, nom: 'Beaufort Light', prix: 1500, type: 'drink', category: 'alcoolique' },
