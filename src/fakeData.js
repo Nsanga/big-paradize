@@ -20,7 +20,7 @@ const fakeData = [
     { id: 19, nom: 'Smooth', prix: 1500, type: 'drink', category: 'alcoolique' },
     { id: 20, nom: 'Grande Guinness', prix: 2000, type: 'drink', category: 'alcoolique' },
     { id: 21, nom: 'BIG COLA', prix: 500, type: 'drink', category: 'gazeuse' },
-    { id: 22, nom: 'BIG ANANAS', prix: 1500, type: 'drink', category: 'gazeuse' },
+    { id: 22, nom: 'BIG ANANAS', prix: 500, type: 'drink', category: 'gazeuse' },
     { id: 23, nom: 'BIG PAMPLEMOUSSE', prix: 500, type: 'drink', category: 'gazeuse' },
     { id: 24, nom: 'BIG GOLDEN', prix: 500, type: 'drink', category: 'gazeuse' },
     { id: 25, nom: 'BIG GRENADINE', prix: 500, type: 'drink', category: 'gazeuse' },
