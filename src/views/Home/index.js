@@ -3,10 +3,14 @@ import { Box, Card, CardContent, CardMedia, Typography } from '@mui/material';
 import { Link } from 'react-router-dom';
 import DrinkImage from '../../assets/drinks.png';
 import FoodImage from '../../assets/food.jpg';
+import BigParadize from '../../assets/paradize.jpg'
 
 const Home = () => {
     return (
         <Box style={{ display: 'flex', flexDirection: 'column', flex: 1, alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
+            <img src={BigParadize} 
+            style={{width:'200px', height:'150px', objectFit:'cover'}} 
+            /> 
             <Box style={{ display: 'flex', flexDirection: 'row'}}>
                 {/* Image pour les boissons */}
                 <Link to="/drinks" style={{ textDecoration: 'none' }}>
