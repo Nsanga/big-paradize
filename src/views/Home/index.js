@@ -1,14 +1,28 @@
 import React from 'react';
-import { Box, Card, CardContent, CardMedia, Typography } from '@mui/material';
+import { Box, Card, CardContent, CardMedia, Typography} from '@mui/material';
 import { Link } from 'react-router-dom';
 import DrinkImage from '../../assets/drinks.png';
 import FoodImage from '../../assets/food.jpg';
 import BigParadize from '../../assets/paradize.jpg'
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 
 const Home = () => {
+
+    const darkTheme = createTheme({
+        palette: {
+          mode: 'dark', // Active le thème sombre
+          background: {
+            default: '#000000', // Couleur de fond noire
+          },
+        },
+      });
+ 
     return (
-        <Box style={{ display: 'flex', flexDirection: 'column', flex: 1, alignItems: 'center', justifyContent: 'center', height: '100vh' }}>
-            <img src={BigParadize} 
+        <ThemeProvider theme={darkTheme}>
+            <CssBaseline />
+        <Box style={{ display: 'flex', flexDirection: 'column', flex: 1, alignItems: 'center', justifyContent: 'center', height: '100vh', gap:12 }}> 
+            <img src={BigParadize} alt='logo'
             style={{width:'200px', height:'150px', objectFit:'cover'}} 
             /> 
             <Box style={{ display: 'flex', flexDirection: 'row'}}>
@@ -49,6 +63,7 @@ const Home = () => {
                 </Link>
             </Box>
         </Box>
+        </ThemeProvider>
     );
 };
 
