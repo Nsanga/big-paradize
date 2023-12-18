@@ -23,7 +23,7 @@ const Home = () => {
             <CssBaseline />
         <Box style={{ display: 'flex', flexDirection: 'column', flex: 1, alignItems: 'center', justifyContent: 'center' }}> 
             <img src={BigParadize} alt='logo'
-            style={{width:'200px', height:'150px', objectFit:'cover', marginBottom:'5rem'}} 
+            style={{width:'200px', height:'150px', objectFit:'cover', marginBottom:'10rem'}} 
             /> 
             <Box style={{ display: 'flex', flexDirection: 'row'}}>
                 {/* Image pour les boissons */}
