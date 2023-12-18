@@ -21,9 +21,9 @@ const Home = () => {
     return (
         <ThemeProvider theme={darkTheme}>
             <CssBaseline />
-        <Box style={{ display: 'flex', flexDirection: 'column', flex: 1, alignItems: 'center', justifyContent: 'center', gap:57 }}> 
+        <Box style={{ display: 'flex', flexDirection: 'column', flex: 1, alignItems: 'center', justifyContent: 'center' }}> 
             <img src={BigParadize} alt='logo'
-            style={{width:'200px', height:'150px', objectFit:'cover'}} 
+            style={{width:'200px', height:'150px', objectFit:'cover', marginBottom:'5rem'}} 
             /> 
             <Box style={{ display: 'flex', flexDirection: 'row'}}>
                 {/* Image pour les boissons */}
