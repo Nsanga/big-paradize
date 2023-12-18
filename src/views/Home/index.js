@@ -21,7 +21,7 @@ const Home = () => {
     return (
         <ThemeProvider theme={darkTheme}>
             <CssBaseline />
-        <Box style={{ display: 'flex', flexDirection: 'column', flex: 1, alignItems: 'center', justifyContent: 'center', gap:24 }}> 
+        <Box style={{ display: 'flex', flexDirection: 'column', flex: 1, alignItems: 'center', justifyContent: 'center', gap:57 }}> 
             <img src={BigParadize} alt='logo'
             style={{width:'200px', height:'150px', objectFit:'cover'}} 
             /> 
