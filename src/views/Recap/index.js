@@ -2,6 +2,9 @@ import React from 'react';
 import { Box, Button, Modal, Typography } from '@mui/material';
 import { useState } from 'react';
 import fakeData from '../../fakeData';
+import html2canvas from 'html2canvas';
+import download from 'downloadjs';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const style = {
     position: 'absolute',
@@ -53,9 +56,41 @@ const Recap = ({ selectedDrinks, quantityValues, type, selectedFoods }) => {
         return total;
     };
 
+    const handleShare = async () => {
+        try {
+            const recapElement = document.getElementById('recap-container');
+
+            if (!recapElement) {
+                return;
+            }
+
+            const canvas = await html2canvas(recapElement, {
+                // Options de configuration, y compris la marge interne (padding)
+                logging: false,
+                width: recapElement.offsetWidth + 20, // Ajoutez la marge interne
+                height: recapElement.offsetHeight + 20, // Ajoutez la marge interne
+                x: -10, // Compensez la marge interne
+                y: -10, // Compensez la marge interne
+            });
+            const dataUrl = canvas.toDataURL('image/png');
+
+            // Télécharger l'image
+            download(dataUrl, 'recap.png', 'image/png');
+
+            // (Optionnel) Rediriger l'utilisateur vers WhatsApp
+            // Remplacez le lien ci-dessous par votre lien WhatsApp
+            window.location.href = 'https://wa.me/';
+
+            // Fermer la modal
+            handleClose()
+        } catch (error) {
+            console.error('Erreur lors du partage sur WhatsApp :', error);
+        }
+    };
+
     return (
         <Box>
-            <Box mt='4rem' style={{display:'flex', justifyContent:'center'}}> 
+            <Box mt='4rem' style={{ display: 'flex', justifyContent: 'center' }}>
                 <Button onClick={handleOpen} variant="contained">Valider</Button>
             </Box>
             <Modal
@@ -65,11 +100,11 @@ const Recap = ({ selectedDrinks, quantityValues, type, selectedFoods }) => {
                 aria-labelledby="keep-mounted-modal-title"
                 aria-describedby="keep-mounted-modal-description"
             >
-                <Box sx={style}>
-                    <Typography variant="h6" fontWeight="bold" mt={2}>
-                        Détails de la commande
-                    </Typography>
-                    <Box p={2}>
+                <Box sx={style} p={2}>
+                    <Box id="recap-container">
+                        <Typography variant="h6" fontWeight="bold" mb={4}>
+                            Détails de la commande
+                        </Typography>
                         {type === 'drink' ? (
                             selectedDrinks.map((drinkId) => {
                                 const drink = getItemDetails(drinkId, 'drink');
@@ -110,11 +145,13 @@ const Recap = ({ selectedDrinks, quantityValues, type, selectedFoods }) => {
                                             key={food.id}
                                             display="flex"
                                             flexDirection="row"
-                                            alignItems="center"
+                                            // alignItems="center"
                                             mb={2}
                                             justifyContent="space-between"
                                         >
-                                            <Typography>{food.nom}</Typography>
+                                            <Box width='40%'>
+                                                <Typography>{food.nom}</Typography>
+                                            </Box>
                                             <Typography>{price} XAF</Typography>
                                             <Typography>{quantity}</Typography>
                                             <Typography>{price * quantity} XAF</Typography>
@@ -139,9 +176,10 @@ const Recap = ({ selectedDrinks, quantityValues, type, selectedFoods }) => {
                                 {calculateTotal()} XAF
                             </Typography>
                         </Box>
-                        <Box mt='2rem' style={{ display: 'flex', justifyContent: 'flex-end' }}>
-                            <Button onClick={handleClose} variant="contained" color="error">Fermer</Button>
-                        </Box>
+                    </Box>
+                    <Box mt='2rem' style={{ display: 'flex', justifyContent: 'flex-end', gap: 12 }}>
+                        <Button onClick={handleShare} variant="outlined" color="success" startIcon={<FaWhatsapp />}>Partager </Button>
+                        <Button onClick={handleClose} variant="contained" color="error">Fermer</Button>
                     </Box>
                 </Box>
             </Modal>
