@@ -5,6 +5,7 @@ import fakeData from '../../fakeData';
 import html2canvas from 'html2canvas';
 import download from 'downloadjs';
 import { FaWhatsapp } from 'react-icons/fa';
+import BigParadize from '../../assets/paradize.jpg'
 
 const style = {
     position: 'absolute',
@@ -102,8 +103,11 @@ const Recap = ({ selectedDrinks, quantityValues, type, selectedFoods }) => {
             >
                 <Box sx={style} p={2}>
                     <Box id="recap-container">
+                        <img src={BigParadize} alt='logo'
+                            style={{ width: '70px', height: '50px', objectFit: 'cover' }}
+                        />
                         <Typography variant="h6" fontWeight="bold" mb={4}>
-                            Détails de la commande
+                            Facture
                         </Typography>
                         {type === 'drink' ? (
                             selectedDrinks.map((drinkId) => {
