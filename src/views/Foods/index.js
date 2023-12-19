@@ -54,13 +54,13 @@ const Foods = () => {
                                 onChange={() => handleCheckboxChange(food.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '30%', marginRight: '8px' }}>
+                            <Box style={{ width: '30%' }} marginRight= '8px'>
                                 <Typography>{food.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{food.prix} XAF</Typography>
                             </Box>
-                            <Box width='10%'>
+                            <Box width='8%'>
                                 <Input
                                     placeholder="Qté"
                                     type="number"

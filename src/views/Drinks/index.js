@@ -55,13 +55,13 @@ const Drink = () => {
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '50%', marginRight: '8px' }}>
+                            <Box style={{ width: '50%' }} marginRight= '8px'>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
-                            <Box width='10%'>
+                            <Box width='8%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -85,13 +85,13 @@ const Drink = () => {
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '50%', marginRight: '8px' }}>
+                            <Box style={{ width: '50%' }} marginRight= '8px'>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
-                            <Box width='10%'>
+                            <Box width='8%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -115,13 +115,13 @@ const Drink = () => {
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '50%', marginRight: '8px' }}>
+                            <Box style={{ width: '50%' }} marginRight= '8px'>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
-                            <Box width='10%'>
+                            <Box width='8%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -145,13 +145,13 @@ const Drink = () => {
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '50%', marginRight: '8px' }}>
+                            <Box style={{ width: '50%' }} marginRight= '8px'>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
-                            <Box width='10%'>
+                            <Box width='8%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -175,13 +175,13 @@ const Drink = () => {
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '50%', marginRight: '8px' }}>
+                            <Box style={{ width: '50%' }} marginRight= '8px'>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
-                            <Box width='10%'>
+                            <Box width='8%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -205,13 +205,13 @@ const Drink = () => {
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '50%', marginRight: '8px' }}>
+                            <Box style={{ width: '50%' }} marginRight= '8px'>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
-                            <Box width='10%'>
+                            <Box width='8%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -235,13 +235,13 @@ const Drink = () => {
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '50%', marginRight: '8px' }}>
+                            <Box style={{ width: '50%' }} marginRight= '8px'>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
-                            <Box width='10%'>
+                            <Box width='8%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -265,13 +265,13 @@ const Drink = () => {
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '50%', marginRight: '8px' }}>
+                            <Box style={{ width: '50%' }} marginRight= '8px'>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
-                            <Box width='10%'>
+                            <Box width='8%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -295,13 +295,13 @@ const Drink = () => {
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '50%', marginRight: '8px' }}>
+                            <Box style={{ width: '50%' }} marginRight= '8px'>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
-                            <Box width='10%'>
+                            <Box width='8%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -325,13 +325,13 @@ const Drink = () => {
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '50%', marginRight: '8px' }}>
+                            <Box style={{ width: '50%' }} marginRight= '8px'>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
-                            <Box width='10%'>
+                            <Box width='8%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -355,13 +355,13 @@ const Drink = () => {
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '50%', marginRight: '8px' }}>
+                            <Box style={{ width: '50%' }} marginRight= '8px'>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
-                            <Box width='10%'>
+                            <Box width='8%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -385,13 +385,13 @@ const Drink = () => {
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '50%', marginRight: '8px' }}>
+                            <Box style={{ width: '50%' }} marginRight= '8px'>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
-                            <Box width='10%'>
+                            <Box width='8%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -415,13 +415,13 @@ const Drink = () => {
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '50%', marginRight: '8px' }}>
+                            <Box style={{ width: '50%' }} marginRight= '8px'>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
-                            <Box width='10%'>
+                            <Box width='8%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
