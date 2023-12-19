@@ -79,7 +79,7 @@ const Recap = ({ selectedDrinks, quantityValues, type, selectedFoods }) => {
 
             // (Optionnel) Rediriger l'utilisateur vers WhatsApp
             // Remplacez le lien ci-dessous par votre lien WhatsApp
-            window.location.href = 'https://wa.me/';
+            window.location.href = 'https://api.whatsapp.com';
 
             // Fermer la modal
             handleClose()
