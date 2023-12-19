@@ -54,19 +54,21 @@ const Foods = () => {
                                 onChange={() => handleCheckboxChange(food.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '30%' }}>
+                            <Box style={{ width: '30%', marginRight: '8px' }}>
                                 <Typography>{food.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{food.prix} XAF</Typography>
                             </Box>
-                            <Input
-                                placeholder="Qté"
-                                type="number"
-                                inputProps={{ min: "1", step: "1" }}  // Définir la valeur minimale et le pas
-                                value={quantityValues[food.id] || ''}
-                                onChange={(e) => handleQuantityChange(food.id, e.target.value)}
-                            />
+                            <Box width='10%'>
+                                <Input
+                                    placeholder="Qté"
+                                    type="number"
+                                    inputProps={{ min: "1", step: "1" }}  // Définir la valeur minimale et le pas
+                                    value={quantityValues[food.id] || ''}
+                                    onChange={(e) => handleQuantityChange(food.id, e.target.value)}
+                                />
+                            </Box>
                         </Box>
                     ))}
             </Box>

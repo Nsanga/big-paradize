@@ -49,18 +49,19 @@ const Drink = () => {
                 {fakeData
                     .filter((item) => item.type === 'drink' && item.category === 'alcoolique')
                     .map((drink) => (
-                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between">
+                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between" gap>
                             <Checkbox
                                 checked={selectedDrinks.includes(drink.id)}
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '30%' }}>
+                            <Box style={{ width: '50%', marginRight: '8px' }}>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
+                            <Box width='10%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -68,6 +69,7 @@ const Drink = () => {
                                 value={quantityValues[drink.id] || ''}
                                 onChange={(e) => handleQuantityChange(drink.id, e.target.value)}
                             />
+                            </Box>                   
                         </Box>
                     ))}
 
@@ -77,18 +79,19 @@ const Drink = () => {
                 {fakeData
                     .filter((item) => item.type === 'drink' && item.category === 'gazeuse')
                     .map((drink) => (
-                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between">
+                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between" gap>
                             <Checkbox
                                 checked={selectedDrinks.includes(drink.id)}
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '30%' }}>
+                            <Box style={{ width: '50%', marginRight: '8px' }}>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
+                            <Box width='10%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -96,6 +99,7 @@ const Drink = () => {
                                 value={quantityValues[drink.id] || ''}
                                 onChange={(e) => handleQuantityChange(drink.id, e.target.value)}
                             />
+                            </Box>                   
                         </Box>
                     ))}
 
@@ -105,18 +109,19 @@ const Drink = () => {
                 {fakeData
                     .filter((item) => item.type === 'drink' && item.category === 'liqueurs-6')
                     .map((drink) => (
-                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between">
+                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between" gap>
                             <Checkbox
                                 checked={selectedDrinks.includes(drink.id)}
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '30%' }}>
+                            <Box style={{ width: '50%', marginRight: '8px' }}>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
+                            <Box width='10%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -124,6 +129,7 @@ const Drink = () => {
                                 value={quantityValues[drink.id] || ''}
                                 onChange={(e) => handleQuantityChange(drink.id, e.target.value)}
                             />
+                            </Box>                   
                         </Box>
                     ))}
 
@@ -133,18 +139,19 @@ const Drink = () => {
                 {fakeData
                     .filter((item) => item.type === 'drink' && item.category === 'vodka')
                     .map((drink) => (
-                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between">
+                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between" gap>
                             <Checkbox
                                 checked={selectedDrinks.includes(drink.id)}
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '30%' }}>
+                            <Box style={{ width: '50%', marginRight: '8px' }}>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
+                            <Box width='10%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -152,6 +159,7 @@ const Drink = () => {
                                 value={quantityValues[drink.id] || ''}
                                 onChange={(e) => handleQuantityChange(drink.id, e.target.value)}
                             />
+                            </Box>                   
                         </Box>
                     ))}
 
@@ -161,18 +169,19 @@ const Drink = () => {
                 {fakeData
                     .filter((item) => item.type === 'drink' && item.category === 'liqueurs-12')
                     .map((drink) => (
-                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between">
+                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between" gap>
                             <Checkbox
                                 checked={selectedDrinks.includes(drink.id)}
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '30%' }}>
+                            <Box style={{ width: '50%', marginRight: '8px' }}>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
+                            <Box width='10%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -180,6 +189,7 @@ const Drink = () => {
                                 value={quantityValues[drink.id] || ''}
                                 onChange={(e) => handleQuantityChange(drink.id, e.target.value)}
                             />
+                            </Box>                   
                         </Box>
                     ))}
 
@@ -189,18 +199,19 @@ const Drink = () => {
                 {fakeData
                     .filter((item) => item.type === 'drink' && item.category === 'liqueurs-15')
                     .map((drink) => (
-                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between">
+                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between" gap>
                             <Checkbox
                                 checked={selectedDrinks.includes(drink.id)}
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '30%' }}>
+                            <Box style={{ width: '50%', marginRight: '8px' }}>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
+                            <Box width='10%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -208,6 +219,7 @@ const Drink = () => {
                                 value={quantityValues[drink.id] || ''}
                                 onChange={(e) => handleQuantityChange(drink.id, e.target.value)}
                             />
+                            </Box>                   
                         </Box>
                     ))}
 
@@ -217,18 +229,19 @@ const Drink = () => {
                 {fakeData
                     .filter((item) => item.type === 'drink' && item.category === 'liqueurs-18')
                     .map((drink) => (
-                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between">
+                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between" gap>
                             <Checkbox
                                 checked={selectedDrinks.includes(drink.id)}
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '30%' }}>
+                            <Box style={{ width: '50%', marginRight: '8px' }}>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
+                            <Box width='10%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -236,6 +249,7 @@ const Drink = () => {
                                 value={quantityValues[drink.id] || ''}
                                 onChange={(e) => handleQuantityChange(drink.id, e.target.value)}
                             />
+                            </Box>                   
                         </Box>
                     ))}
 
@@ -245,18 +259,19 @@ const Drink = () => {
                 {fakeData
                     .filter((item) => item.type === 'drink' && item.category === 'champagne')
                     .map((drink) => (
-                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between">
+                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between" gap>
                             <Checkbox
                                 checked={selectedDrinks.includes(drink.id)}
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '30%' }}>
+                            <Box style={{ width: '50%', marginRight: '8px' }}>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
+                            <Box width='10%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -264,6 +279,7 @@ const Drink = () => {
                                 value={quantityValues[drink.id] || ''}
                                 onChange={(e) => handleQuantityChange(drink.id, e.target.value)}
                             />
+                            </Box>                   
                         </Box>
                     ))}
 
@@ -273,18 +289,19 @@ const Drink = () => {
                 {fakeData
                     .filter((item) => item.type === 'drink' && item.category === 'vin-moeleux')
                     .map((drink) => (
-                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between">
+                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between" gap>
                             <Checkbox
                                 checked={selectedDrinks.includes(drink.id)}
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '30%' }}>
+                            <Box style={{ width: '50%', marginRight: '8px' }}>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
+                            <Box width='10%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -292,6 +309,7 @@ const Drink = () => {
                                 value={quantityValues[drink.id] || ''}
                                 onChange={(e) => handleQuantityChange(drink.id, e.target.value)}
                             />
+                            </Box>                   
                         </Box>
                     ))}
 
@@ -301,18 +319,19 @@ const Drink = () => {
                 {fakeData
                     .filter((item) => item.type === 'drink' && item.category === 'vin-blanc-secs')
                     .map((drink) => (
-                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between">
+                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between" gap>
                             <Checkbox
                                 checked={selectedDrinks.includes(drink.id)}
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '30%' }}>
+                            <Box style={{ width: '50%', marginRight: '8px' }}>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
+                            <Box width='10%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -320,6 +339,7 @@ const Drink = () => {
                                 value={quantityValues[drink.id] || ''}
                                 onChange={(e) => handleQuantityChange(drink.id, e.target.value)}
                             />
+                            </Box>                   
                         </Box>
                     ))}
 
@@ -329,18 +349,19 @@ const Drink = () => {
                 {fakeData
                     .filter((item) => item.type === 'drink' && item.category === 'vin-rosés')
                     .map((drink) => (
-                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between">
+                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between" gap>
                             <Checkbox
                                 checked={selectedDrinks.includes(drink.id)}
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '30%' }}>
+                            <Box style={{ width: '50%', marginRight: '8px' }}>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
+                            <Box width='10%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -348,6 +369,7 @@ const Drink = () => {
                                 value={quantityValues[drink.id] || ''}
                                 onChange={(e) => handleQuantityChange(drink.id, e.target.value)}
                             />
+                            </Box>                   
                         </Box>
                     ))}
 
@@ -357,18 +379,19 @@ const Drink = () => {
                 {fakeData
                     .filter((item) => item.type === 'drink' && item.category === 'vin-rouges')
                     .map((drink) => (
-                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between">
+                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between" gap>
                             <Checkbox
                                 checked={selectedDrinks.includes(drink.id)}
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '30%' }}>
+                            <Box style={{ width: '50%', marginRight: '8px' }}>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
+                            <Box width='10%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -376,6 +399,7 @@ const Drink = () => {
                                 value={quantityValues[drink.id] || ''}
                                 onChange={(e) => handleQuantityChange(drink.id, e.target.value)}
                             />
+                            </Box>                   
                         </Box>
                     ))}
 
@@ -385,18 +409,19 @@ const Drink = () => {
                 {fakeData
                     .filter((item) => item.type === 'drink' && item.category === 'digestif')
                     .map((drink) => (
-                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between">
+                        <Box key={drink.id} display="flex" flexDirection="row" alignItems="center" mb={2} justifyContent="space-between" gap>
                             <Checkbox
                                 checked={selectedDrinks.includes(drink.id)}
                                 onChange={() => handleCheckboxChange(drink.id)}
                                 color="primary"
                             />
-                            <Box style={{ width: '30%' }}>
+                            <Box style={{ width: '50%', marginRight: '8px' }}>
                                 <Typography>{drink.nom}</Typography>
                             </Box>
                             <Box style={{ width: '30%' }}>
                                 <Typography>{drink.prix} XAF</Typography>
                             </Box>
+                            <Box width='10%'>
                             <Input
                                 placeholder="Qté"
                                 type="number"
@@ -404,6 +429,7 @@ const Drink = () => {
                                 value={quantityValues[drink.id] || ''}
                                 onChange={(e) => handleQuantityChange(drink.id, e.target.value)}
                             />
+                            </Box>                   
                         </Box>
                     ))}
             </Box>
