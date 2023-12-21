@@ -6,6 +6,7 @@ import html2canvas from 'html2canvas';
 import download from 'downloadjs';
 import { FaWhatsapp } from 'react-icons/fa';
 import BigParadize from '../../assets/paradize.jpg'
+import { useCategory } from '../../CategoryContext';
 
 const style = {
     position: 'absolute',
@@ -23,11 +24,19 @@ const Recap = ({ selectedDrinks, quantityValues, type, selectedFoods }) => {
     const [open, setOpen] = useState(false);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+    const { selectedCategory } = useCategory();
 
     const getItemDetails = (itemId, itemType) => {
-        const item = fakeData.find((item) => item.id === itemId && item.type === itemType);
+    
+        // Assurez-vous que selectedCategory est défini
+        if (!selectedCategory) {
+            return null;
+        }
+    
+        const item = selectedCategory.items.find((item) => item.id === itemId && item.type === itemType);
         return item;
     };
+    
 
     const calculateTotal = () => {
         let total = 0;
